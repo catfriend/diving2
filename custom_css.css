@@ -4,16 +4,13 @@
  body {
   font-family: Raleway, sans-serif;
   position: relative;
-  color: black;
  }
-
 
  /*Video:
 
  - Set the video as the bg and set it fixed
  - make sure it appears behind all elements
  - make it spread across the whole webpage */
-
  #bgvideo {
   position: fixed;
   min-height: 100%;
@@ -21,21 +18,19 @@
   z-index: -100;
  }
 
- /* Video does not work on small devices
- -Hide the video and set picture as the bg w/media querires
+ /* no video on small devices
+ - Hide the video and set picture as the bg w/media querires
  - make img spread across page*/
 @media (max-device-width: 768px) {
   body {
     background: url(images/anemone.jpg) center center fixed;
     background-size: cover;
   }
+
   #bgvideo {
     display: none;
   }
 }
-
-
-
 
 @media (max-width: 768px) {
       .carousel-inner .item img {
@@ -46,7 +41,7 @@
       }
 }
 
-@media (max-width: :400px) {
+@media (max-width: 400px) {
       .carousel-inner .item img {
         height: 200px;
       }
@@ -55,16 +50,13 @@
       }
 
       .navbar-custom .navbar-brand {
-        font-size: 12px
+        font-size: 12px;
       }
 }
-
-
 
  /* Style the home section and elements inside it
  - reduce the margin bottom of h1 and h2
  - style the button and its hover state */
-
  #home {
   background-color: transparent;
   color: #fff;
@@ -128,7 +120,6 @@
  -set the width: of the carousel and center it
  - set the height of the pictures and center them inside the carousel items
  -Move the carousel caption under the pictures */
-
  #promise {
   padding-top: 100px;
  }
@@ -150,13 +141,7 @@
   height: 200px;
  }
 
-/* removes dots completely; without it the indicators show above the photos not in them
- #myCarousel li {
-  list-style: none;
- } */
-
  /* Style the footer using a transparent bg */
-
  .footer {
   background-color: rgba(77, 53, 136, 0.3);
   color: #fff;
@@ -164,7 +149,7 @@
   margin-top: 150px;
   font-size: 15px;
  }
-
+ 
  /* Style the navbar using a navbar css generator */
  .navbar-custom {
   font-size: 18px;
